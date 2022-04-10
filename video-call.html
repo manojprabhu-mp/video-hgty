@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Video Call</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a4fd98740a.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="tit">
+    <h2>Video Call</h2>
+
+  </div>
+  <div class="wrapper">
+    <div class="main-video">
+      <iframe class="main-video-frame" width="800" height="600" src="https://www.youtube.com/embed/FrKNa3hruBw">
+      </iframe>
+    </div>
+
+
+    <div class="video-btn-container">
+      <div class="second-video">
+        <iframe class="second-video-frame" width="192" height="144" src="https://www.youtube.com/embed/EngW7tLk6R8"> </iframe>
+      </div>
+      <div class="timer-btn-container">
+
+        <div class="timer">
+          00:10:03
+        </div>
+
+        <div class="icons">
+          <div class="single-icon icon-mic">
+            <i onclick="microphoneToggle(this)" class="fa fa-solid fa-microphone"></i>
+          </div>
+          <div class="single-icon icon-call">
+            <i onclick="callToggle(this)" class="fa fa-call fa-solid fa-phone"></i>
+          </div>
+          <div class="single-icon icon-video">
+            <i onclick="videoToggle(this)" class="fa fa-solid fa-video"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- script for icons toggle funtion -->
+  <script>
+    function microphoneToggle(x) {
+      x.classList.toggle("fa-microphone-slash");
+    }
+
+    function callToggle(x) {
+      x.classList.toggle("fa-phone-slash");
+    }
+
+    function videoToggle(x) {
+      x.classList.toggle("fa-video-slash");
+    }
+  </script>
+
+</body>
+
+<!-- Notes:
+colour pallet link  https://colorhunt.co/palette/219f94c1deaef2f5c8e8e8a6
+
+color scale
+#219F94
+#C1DEAE
+#F2F5C8
+#E8E8A6
+-->
+
+</html>
